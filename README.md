@@ -37,7 +37,7 @@ python benchmark_models.py --SAVED_DATA_FOLDER data --RESULT_SAVE_FOLDER results
 To solve the OpenBLAS Warning, I have provided a shell script "env.sh".
 
 ```
-aaasdfsdfsfsf
+111111111111
 cd NGD_CSD_benchmarking
 source ./env.sh
 python benchmark_models.py --SAVED_DATA_FOLDER data --RESULT_SAVE_FOLDER results
