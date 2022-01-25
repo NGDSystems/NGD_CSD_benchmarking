@@ -34,6 +34,13 @@ python benchmark_models.py --SAVED_DATA_FOLDER data --RESULT_SAVE_FOLDER results
 
 
 ## OpenBLAS Warning : Detect OpenMP Loop and this application may hang. Please rebuild the library with USE_OPENMP=1 option.
+To solve the OpenBLAS Warning, I have provided a shell script "env.sh".
 
+```
+test
+cd NGD_CSD_benchmarking
+source ./env.sh
+python benchmark_models.py --SAVED_DATA_FOLDER data --RESULT_SAVE_FOLDER results
+```
 
 
