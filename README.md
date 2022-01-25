@@ -23,3 +23,6 @@ Other options are:
 --NUM_CLASSES   Number of classes to predict
 --WARM-UP       Number of warm-up rounds before we start collecting training/inference durations
 ```
+## Install and Example
+
+git 
