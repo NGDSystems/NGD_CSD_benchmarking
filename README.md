@@ -30,6 +30,7 @@ git clone https://github.com/NGDSystems/NGD_CSD_benchmarking.git
 cd NGD_CSD_benchmarking
 mkdir data
 mkdir results
+source ./env.sh
 python data_saver.py --DATA_SAVE_FOLDER data
 python benchmark_models.py --SAVED_DATA_FOLDER data --RESULT_SAVE_FOLDER results
 ```
