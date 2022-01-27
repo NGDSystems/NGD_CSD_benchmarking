@@ -19,7 +19,7 @@ python benchmark_models.py --SAVED_DATA_FOLDER <location where you saved your da
 Currently only VGG and MOBILENET are enabled - you can uncomment the others depending on the hardware performance.
 Other options are:
 ```
---BATCH_SIZE    The default batch size is 8. Change it to fit the hardware capacity.
+--BATCH_SIZE    The default batch size is 4. Change it to fit the hardware capacity.
 --NUM_CLASSES   Number of classes to predict
 --WARM-UP       Number of warm-up rounds before we start collecting training/inference durations
 ```
