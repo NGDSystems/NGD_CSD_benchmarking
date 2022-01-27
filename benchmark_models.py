@@ -13,12 +13,7 @@ import torch.nn as nn
 import torchvision.models as models
 from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
-# import os
 import glob
-
-#os.environ["MKL_NUM_THREADS"] = "1" 
-#os.environ["NUMEXPR_NUM_THREADS"] = "1" 
-#os.environ["OMP_NUM_THREADS"] = "1" 
 import numpy as np
 
 
@@ -30,19 +25,10 @@ torch.backends.cudnn.benchmark = True
 precisions = ["float"]
 parser = argparse.ArgumentParser(description="NGD PyTorch Benchmarking")
 parser.add_argument("--WARM-UP", "-w", type=int, default=5, required=False, help="Number of warm-up rounds")
-parser.add_argument("--SAVED_DATA_FOLDER", "-d", type=str,
-                    default="/home/sabedin/Data/ngd-benchmark/sample-data", required=False,
-                    help="Folder where data is saved")
-parser.add_argument(
-    "--BATCH_SIZE", "-b", type=int, default=4, required=False, help="Batch size"
-)
-parser.add_argument(
-    "--NUM_CLASSES", "-c", type=int, default=100, required=False, help="Number of classes"
-)
-parser.add_argument(
-    "--RESULT_SAVE_FOLDER", "-r", type=str, default="/gpfs/fs0/data/DeepLearning/sabedin/Data/ngd-benchmark/results",
-    required=False, help="folder to save results"
-)
+parser.add_argument("--SAVED_DATA_FOLDER", "-d", type=str, default="./sample-data", required=False, help="Folder where data is saved")
+parser.add_argument("--BATCH_SIZE", "-b", type=int, default=4, required=False, help="Batch size")
+parser.add_argument("--NUM_CLASSES", "-c", type=int, default=100, required=False, help="Number of classes")
+parser.add_argument("--RESULT_SAVE_FOLDER", "-r", type=str, default="./results", required=False, help="folder to save results")
 args = parser.parse_args()
 
 # List of models we want to test
