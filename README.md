@@ -1,4 +1,4 @@
-# NGD_CSD_benchmarking
+# Pytorch_benchmark
 
 ## Saving Data To Disk
 To run the benchmark, first you have to run the data_saver.py with the following:
